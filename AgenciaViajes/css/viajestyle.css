@@ -1,0 +1,83 @@
+.viaje-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.viaje {
+    background: rgb(249, 232, 209);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+}
+
+.viaje:hover {
+    transform: scale(1.05);
+}
+
+.viaje img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.viaje h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+h3 {
+    color: #008B8B; 
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.viaje p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+ul li {
+    background:#f3a706;
+    color: white;
+    padding: 12px 20px;
+    margin: 5px 0;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+ul li:hover {
+    transform: scale(1.05);
+    color: #008B8B;
+}
